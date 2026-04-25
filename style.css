@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    color: white;
+}
+.digiKar_logo{
+    background-image: url(assets/images/DIGITALKARIGARLOGO.jpg);
+    min-height: 60dvh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+nav>ul>li{
+    display: inline-block;
+    transition: 20ms  ease-in;
+}
+nav>ul>li:hover{
+    transform: translateY(4px);
+    color: #6c63ff;
+    box-shadow: 2px 2px 4px #6c63ff ;
+}
+nav>ul{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin: 20px;
+}
+@media (max-width: 768px) {
+  nav>ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    
+  }
+}
+
+.tag{
+    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.tag>p{
+    margin-top: 10px;
+    text-align: center;
+}
+.head1{
+    text-align: center;
+    margin-top: 5%;
+}
+.service>h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.service{
+    display: grid;
+    border: transparent;
+    border-radius: 12px;
+    /* grid-template-rows: 200px 200px 200px  ; */
+     grid-auto-rows: minmax(120px, auto);
+    gap: 20px;
+    /* grid-template-columns: 200px 200px 200px 200px 200px ; */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 20px;
+    background-color: rgb(32, 32, 32);
+    text-align: center;
+    margin: auto;
+    place-items: center;
+    min-height: 50dvh;
+      border: 1px solid #6c63ff;
+    
+}
+.item{
+    border: 1px solid white;
+    border-radius: 12px;
+    width: 100%;
+  max-width: 220px;
+  min-height: 120px;
+    transition: all 0.3s ease;
+    margin-top: 20px;  
+    margin-bottom: 10px;
+    box-shadow: 7px 7px 12px black;
+    font-size: larger;
+
+}
+@media (min-width: 1024px) {
+  .service {
+    min-height: 70vh; /* less height on big screens */
+  }
+}
+.item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  border: 2px solid #6c63ff; 
+}
+.num{
+    font-size: xxx-large;
+    font-weight: bold;
+    margin-right: 400px;
+    margin-bottom: 4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+.price{
+    display: grid;
+    /* grid-template-columns: 200px 200px 200px; */
+    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
+    min-height: 50dvh;
+    gap: 20px;
+    background-color:rgb(32, 32, 32);
+    place-items: center;
+    border-radius: 12px;
+   max-width:  70%;
+    margin: auto;
+    margin-top: 20px;
+      border: 1px solid #6c63ff;
+}
+.rate{
+    border: 1px solid #6c63ff;
+   width: 100%;
+  max-width: 220px;
+  min-height: 180px;
+    text-align: center;
+    transition: all 0.3s ease-in;
+    font-size: xx-large;
+    margin-top: 20px;
+    border: 1px solid gray;
+    border-radius: 12px;
+    
+    
+}
+.rate:hover {
+  border: 2px solid #6c63ff; /* your theme color */
+  transform: translateY(-8px);
+  box-shadow: gray 7px 7px 12px;
+}
+.inr{
+    margin-top: 60px;
+    font-size: large;
+}
+.about{
+  text-align: center;
+}
+.about>h2{
+  margin-top: 20px;
+}
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    animation: float 2s ease-in-out infinite;
+    z-index: 1000;
+}
+
+.whatsapp-float img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Hover Effect */
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+footer{
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
