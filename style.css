@@ -80,7 +80,7 @@ nav>ul{
     
 }
 .item{
-    border: 1px solid white;
+    border: 1px solid gray;
     border-radius: 12px;
     width: 100%;
   max-width: 220px;
