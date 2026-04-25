@@ -8,7 +8,7 @@ body{
     color: white;
 }
 .digiKar_logo{
-    background-image: url(assets/images/DIGITALKARIGARLOGO.jpg);
+    background-image: url(DIGITALKARIGARLOGO.jpg);
     min-height: 60dvh;
     background-position: center;
     background-repeat: no-repeat;
